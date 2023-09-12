@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Acme Inc Acne cream/paste/liquid</title>
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/pages/header.css" />
     <script type="module" src="./assets/js/app.js" defer></script>
     <link
       rel="stylesheet"
@@ -15,8 +16,31 @@
     />
   </head>
   <body>
-    <header>ME</header>
+    <header>
+      <nav class="navBar">
+        <div class="navBarLogo">
+          <a href="./index.html"></a>
+          <img src="./assets/img/ACME.png" alt="Acme.Logo" />
+        </div>
+        <ul class="navLinks" aria-expanded="false">
+          <li>
+            <i class="icon fa-solid fa-sterling-sign"></i>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <i class="icon fa-regular fa-comment-dots"></i>
+            <a href="#">About Us</a>
+          </li>
+          <li>
+            <i class="icon fa-regular fa-handshake"></i>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+        <button class="navBarExpandButton"></button>
+      </nav>
+    </header>
     <main>
+      <div class="mainBlurMask"></div>
       <section class="hero">Hassan</section>
       <section class="about">Arthus</section>
       <section class="contact">Ahmed</section>
