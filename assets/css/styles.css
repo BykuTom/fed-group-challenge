@@ -1,0 +1,26 @@
+:root {
+  /* COLORS */
+
+  --colour-seasalt-white: #fafafa;
+  --colour-rasin-black: #1e212b;
+  --colour-chinese-violet: #7e6b8f;
+  --colour-amaranth-red: ##da3e52;
+  --colour-coral-orange: #fc7753;
+
+  --colour-main: var(--colour-seasalt-white);
+  --colour-primary: var(--colour-chinese-violet);
+  --colour-secondary: var(--colour-amaranth-red);
+
+  --color-text-main: var(--colour-rasin-black);
+  --color-text-primary: var(--colour-seasalt-white);
+  --color-text-secondary: var(--colour-seasalt-white);
+
+  /* Fonts */
+  --font-sm: 1rem;
+  --font-med: 1.5rem;
+  --font-lrg: 2rem;
+  --font-xl: 3rem;
+  --font-xxl: 4rem;
+
+  --font-family-default: "Roboto", sans-serif;
+}
