@@ -65,7 +65,7 @@ button.navBarExpandButton div.bar {
   position: absolute;
   height: 20%;
   width: 100%;
-  background: var(--colour-text-main);
+  background: var(--colour-secondary);
   border-radius: 0.25rem;
 }
 
@@ -113,22 +113,7 @@ ul.navLinks {
   );
   transition: left 0.25s linear;
 }
-/* ul.navLinks::before {
-  content: "";
-  position: absolute;
-  top: -5px;
-  left: -5px;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  border-radius: 0.5rem;
-  background: conic-gradient(
-    var(--colour-coral-orange),
-    var(--colour-chinese-violet),
-    var(--colour-amaranth-red),
-    var(--colour-coral-orange)
-  );
-  z-index: -1;
-} */
+
 ul.navLinks.open {
   left: 0;
 }
@@ -140,12 +125,7 @@ ul.navLinks li {
   position: relative;
   display: flex;
 }
-/* ul.navLinks li {
-  width: 100%;
-  height: max(4rem, calc(4vw + 1rem));
-  padding: 0.5rem;
-  grid-column: span 3;
-} */
+
 ul.navLinks li::before {
   content: "";
   position: absolute;
@@ -182,8 +162,7 @@ ul.navLinks li i.icon {
 ul.navLinks li ul.navBarShowroomLinks {
   display: none;
 }
-ul.navLinks li a,
-ul.navLinks li span {
+ul.navLinks li a {
   position: absolute;
   text-align: center;
   inset: 0;
@@ -201,3 +180,39 @@ ul.navLinks li span {
   font-size: max(4vw, var(--font-lrg));
 }
 /* end of header styles */
+@media screen and (min-width: 64rem) {
+  ul.navLinks {
+    padding: 1rem 1rem;
+    top: 0;
+    left: 15%;
+    bottom: 0;
+    right: 0;
+    height: 5rem;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+  }
+  ul.navLinks li {
+    aspect-ratio: unset;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    justify-content: space-around;
+    max-width: 16rem;
+  }
+  ul.navLinks li i.icon {
+    position: static;
+    text-align: center;
+    font-size: 3rem;
+    inset: unset;
+    color: var(--colour-secondary);
+  }
+  ul.navLinks li a {
+    position: static;
+    text-align: center;
+    font-size: var(--font-lrg);
+    inset: unset;
+  }
+}
