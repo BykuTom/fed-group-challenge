@@ -1,0 +1,17 @@
+@import "/assets/css/styles.css";
+
+#table {
+    width: 90%;
+    margin: auto;
+}
+.specsRow {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 2px solid var(--colour-primary);
+    border-image-slice: 1;
+    border-image-source: linear-gradient( to right, transparent, var(--colour-secondary), transparent );
+    border-radius: 0.1rem;
+}
