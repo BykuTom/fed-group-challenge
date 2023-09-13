@@ -13,9 +13,9 @@
   --colour-primary: var(--colour-chinese-violet);
   --colour-secondary: var(--colour-amaranth-red);
 
-  --color-text-main: var(--colour-rasin-black);
-  --color-text-primary: var(--colour-seasalt-white);
-  --color-text-secondary: var(--colour-seasalt-white);
+  --colour-text-main: var(--colour-rasin-black);
+  --colour-text-primary: var(--colour-seasalt-white);
+  --colour-text-secondary: var(--colour-seasalt-white);
 
   /* Fonts */
   --font-sm: 1rem;
