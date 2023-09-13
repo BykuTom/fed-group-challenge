@@ -1,0 +1,123 @@
+section.hero {
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  gap: 1rem;
+  background: linear-gradient(
+    130deg,
+    transparent 15%,
+    var(--colour-secondary) 15.2%,
+    var(--colour-coral-orange) 35%,
+    transparent 35.2% 50%,
+    var(--colour-primary) 50.2%,
+    var(--colour-secondary) 60%,
+    transparent 60.2%
+  );
+}
+section.hero h1 {
+  text-align: center;
+  font-weight: 500;
+}
+section.hero h2 {
+  font-weight: 300;
+}
+section.hero div.flex-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+section.hero div.flex-2 div:first-child {
+  z-index: 2;
+}
+section.hero div.flex-2 div {
+  max-width: 55%;
+  position: relative;
+  min-width: 45%;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.hero div.flex-2 div:last-child {
+  height: 100%;
+  width: 100%;
+}
+section.hero div.flex-2 div img {
+  width: 100%;
+}
+section.hero strong {
+  color: var(--colour-secondary);
+}
+div.heroCards {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+div.heroCards div {
+  background: var(--colour-main);
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: 0.2rem solid var(--colour-primary);
+  max-width: 70%;
+  color: var(--colour-secondary);
+}
+div.heroCards div:first-child {
+  justify-self: end;
+  align-self: flex-end;
+}
+div.heroCards div:last-child {
+  align-self: flex-end;
+}
+button.cta-button {
+  position: relative;
+  background: var(--colour-main);
+  min-width: fit-content;
+  max-width: 20rem;
+  text-align: center;
+  font-size: calc(var(--font-lrg) + 0.2rem);
+  border: none;
+  padding: 0.5rem;
+  color: var(--colour-secondary);
+  border-radius: 0.3rem;
+  display: flex;
+}
+
+button.cta-button::before {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  transform: translate(6px, 8px);
+  z-index: -2;
+  background: radial-gradient(ellipse at bottom, dimgray 70%, transparent);
+  filter: blur(10px);
+}
+button.cta-button::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  border-radius: 0.5rem;
+  background: conic-gradient(
+    var(--colour-coral-orange),
+    var(--colour-chinese-violet),
+    var(--colour-amaranth-red),
+    var(--colour-coral-orange)
+  );
+  z-index: -1;
+}
+button.cta-button:hover {
+  background: var(--colour-amaranth-red);
+  color: var(--colour-main);
+}
