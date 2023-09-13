@@ -17,6 +17,7 @@ section.hero {
     var(--colour-secondary) 60%,
     transparent 60.2%
   );
+  padding-top: 2rem;
 }
 section.hero h1 {
   text-align: center;
@@ -54,7 +55,7 @@ section.hero div.flex-2 div img {
   width: 100%;
 }
 section.hero strong {
-  color: var(--colour-secondary);
+  color: var(--colour-primary);
 }
 div.heroCards {
   display: flex;
