@@ -1,11 +1,27 @@
 @import "/assets/css/styles.css";
 
+.features {
+    padding: 0rem 1rem 0 1rem;
+}
+
+.features h2, p {
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+#video {
+    max-width: 100%;
+}
+#audio {
+    align-items: center;
+    border-radius: 0.1rem;
+    max-width: 100%;
+}
+
 #table {
     width: 90%;
     margin: auto;
     padding-top: 1rem;
 }
-
 .hardware {
     font-weight: bold;
     width: 25%;
@@ -34,6 +50,7 @@
     padding: 5px 8px 6px 8px;
 	font: inherit;
     z-index: 1;
+    border-radius: 0.3rem;
 }
 
 #buttonSpecs::before {
@@ -56,4 +73,26 @@
 #buttonSpecs:hover {
     color: var(--color-text-primary);
     transition: 0.25s;
+}
+
+@media  screen and (min-width: 1024px) {
+
+    #featuresContainer {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #table {
+        width: 95%;
+    }
+
+    #video {
+        width: 500px;
+    }
+
+    #audio {
+        width: 500px;
+    }
 }
