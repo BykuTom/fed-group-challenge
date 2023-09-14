@@ -174,11 +174,9 @@ ul.navLinks li a {
   font-weight: lighter;
   text-decoration: none;
   cursor: pointer;
+  text-wrap: nowrap;
 }
-ul.navLinks li span {
-  align-items: center;
-  font-size: max(4vw, var(--font-lrg));
-}
+
 /* end of header styles */
 @media screen and (min-width: 64rem) {
   ul.navLinks {
