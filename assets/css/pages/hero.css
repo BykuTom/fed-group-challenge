@@ -34,10 +34,13 @@ section.hero div.flex-2 {
   position: relative;
   z-index: 1;
   width: 100%;
+  margin-bottom: 1rem;
+  z-index: 1;
 }
 section.hero div.flex-2 div:first-child {
   z-index: 2;
 }
+
 section.hero div.flex-2 div {
   max-width: 55%;
   position: relative;
@@ -46,6 +49,18 @@ section.hero div.flex-2 div {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+section.hero div.flex-2 div.blob {
+  position: absolute;
+  inset: 0.2rem;
+  max-width: unset;
+  min-width: unset;
+  margin-bottom: unset;
+  border-radius: 88% 12% 10% 90% / 41% 19% 17% 29%;
+  background: linear-gradient(
+    to bottom right,
+    var(--colour-primary, var(--colour-secondary))
+  );
 }
 section.hero div.flex-2 div:last-child {
   height: 100%;

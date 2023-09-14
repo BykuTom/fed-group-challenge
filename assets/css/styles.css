@@ -21,12 +21,30 @@
   --font-sm: 1rem;
   --font-med: 1.5rem;
   --font-lrg: 2rem;
-  --font-xl: 3rem;
-  --font-xxl: 4rem;
+  --font-xl: 2.8rem;
+  --font-xxl: 3.4rem;
 
   --font-family-default: "Roboto", sans-serif;
 }
 
+@media screen and (min-width: 64rem) {
+  :root {
+    --font-sm: 1.2rem;
+    --font-med: 1.8rem;
+    --font-lrg: 2.2rem;
+    --font-xl: 3rem;
+    --font-xxl: 4.4rem;
+  }
+}
+@media screen and (min-width: 90rem) {
+  :root {
+    --font-sm: 1.5rem;
+    --font-med: 2rem;
+    --font-lrg: 2.5rem;
+    --font-xl: 3.5rem;
+    --font-xxl: 5rem;
+  }
+}
 *,
 *::before,
 *::after {
